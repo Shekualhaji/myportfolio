@@ -88,14 +88,14 @@ export default function About() {
                 - To use your own photo, place it at `public/profile.jpg` (root of project).
                 - The component will load `/profile.jpg` and fall back to the Unsplash placeholder if missing.
               */}
-              <div className="absolute inset-0 bg-cyan-400/30 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+              <div className="absolute inset-0 bg-cyan-400/30 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
               <div
-                className="relative w-80 h-80 mx-auto bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full flex items-center justify-center"
+                className="relative w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full flex items-center justify-center overflow-hidden ring-2 ring-cyan-400/10"
               >
                 <img
-                  src="/Alhaji.jpg"
-                  alt="Profile"
-                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=60' }}
+                  src="Alhaji.jpg"
+                  alt="Profile photo"
+                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=60' }}
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
