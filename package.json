@@ -1,12 +1,10 @@
 {
-  "homepage": "https://Shekualhaji.github.io/Portfolio",
+  "homepage": "https://Shekualhaji.github.io/myportfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "deploy-gh-pages": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
